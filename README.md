@@ -21,6 +21,29 @@
     </li>
     <li>
       <a href="#Instructions">Instructions</a>
+      <ol>
+        <li>
+          <a href="#Setup-MQTT-server">Setup MQTT server</a>
+        </li>
+        <li>
+          <a href="#Install-and-Setup-Arduino">Install and Setup Arduino</a>
+        </li>
+        <li>
+          <a href="#Deploy-BLE-Server">Deploy BLE Server</a>
+        </li>
+        <li>
+          <a href="#Deploy-BLE-Receiver">Deploy BLE Receiver</a>
+        </li>
+        <li>
+          <a href="#Prepare-Mobile-Device-as-the-Receiver">Prepare Mobile Device as the Receiver</a>
+        </li>
+        <li>
+          <a href="#Prepare-Web-Application">Prepare Web Application</a>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <a href="#Observe">Observe</a>
     </li>
   </ol>
 </details>
@@ -151,7 +174,7 @@ If you are using our pre configured mqtt server you don't need to change the `mq
 
 
 ## Deploy BLE Receiver
-### Prerequisites:
+### Prerequisites
 - XIAO_ESP32C3 board
 - USB C cable
 - Computer with Arduino IDE installed
@@ -203,7 +226,7 @@ python main.py
 After the application has been run it should tranmit 100 message to BLE server
 
 
-# Observe:
+# Observe
 
 
 
