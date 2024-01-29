@@ -34,7 +34,10 @@ This system could be used for a variety of applications, such as:
 1. Cloud VM instance for setup MQTT server
 2. Two XIAO_ESP32C3 board (one for BLE server and one for BLE receiver)
 > Note: The second device fot BLE receiver is optional, you can use a mobile device instead. Follow the instructions accordingly to you preference.
-
+3. Clone this repository into your PC
+```
+git clone https://github.com/p4l4s6/IOT-MINI-PROJECT-2
+```
 
 
 # Instructions
