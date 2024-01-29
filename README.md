@@ -1,3 +1,32 @@
+# IoT-mini-project-2
+
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#project-idea">Project Idea</a>
+    </li>
+    <li>
+      <a href="#description">Description</a>
+    </li>
+    <li>
+      <a href="#objectives">Objectives</a>
+    </li>
+    <li>
+      <a href="#Use-Cases">Use Cases</a>
+    </li>
+    <li>
+      <a href="#Requirements">Requirements</a>
+    </li>
+    <li>
+      <a href="#Instructions">Instructions</a>
+    </li>
+  </ol>
+</details>
+
+<br>
+
 # Project Idea
 
 A system that allows web applications to send data to a Bluetooth Low Energy (BLE) server via the MQTT protocol. The BLE server then broadcasts the data to other BLE devices in the vicinity. These devices can then receive and act upon the data according to their specific requirements.
@@ -75,7 +104,7 @@ sudo nano /etc/mosquitto/conf.d/default.conf
 
 
 
-# Install and Setup Arduino
+## Install and Setup Arduino
 1. Install the Arduino IDE. If you don't already have the Arduino IDE installed, download and install it from the official website.
 
 2. In your Arduino IDE, go to `File> Preferences`.
@@ -90,8 +119,8 @@ sudo nano /etc/mosquitto/conf.d/default.conf
 
 
 
-# Deploy BLE Server
-## Prerequisites
+## Deploy BLE Server
+### Prerequisites
 
 - XIAO_ESP32C3 board
 - USB C cable
@@ -121,8 +150,8 @@ If you are using our pre configured mqtt server you don't need to change the `mq
 6. Open serial monitor and check if its connected to `WIFI MQTT` server. If you see the message in serial monitor `Connected to MQTT server` that means everything has been configured accordingly. If it doesn't shows this message recheck the steps and double check the your wifi credentials and mqtt server and port.
 
 
-# Deploy BLE Receiver
-## Prerequisites:
+## Deploy BLE Receiver
+### Prerequisites:
 - XIAO_ESP32C3 board
 - USB C cable
 - Computer with Arduino IDE installed
@@ -133,7 +162,7 @@ If you are using our pre configured mqtt server you don't need to change the `mq
 4. Click the `Upload` button. The firmware will be uploaded to the XIAO_ESP32C3 board.
 5. Once the firmware is uploaded to the board reboot the board and open up `Serial Monitor` from `TOOLS > Serial Monitor` and keep it open. The transmitted message will be shown here.
 
-# Prepare Mobile Device as the Receiver
+## Prepare Mobile Device as the Receiver
 
 Firts, search and download the nRF Connect app in major mobile app stores, which allows your phone to search for and connect to Bluetooth devices.
 
@@ -145,20 +174,20 @@ After downloading the software, follow the steps shown below to search for and c
 ![image](https://github.com/p4l4s6/IOT-MINI-PROJECT-2/assets/50152321/b90c6471-cca3-4df4-921b-820b81f7a488)
 
 
-# Prepare Web Application
+## Prepare Web Application
 This code should be running in your laptop or desktop. You will require `python 3.9` and virtualenv to run the project.
 
-### 1. Create virtualenv
+1. Create virtualenv
 ```
 python -m venv venv
 ```
 
-### 2. Install requirements
+2. Install requirements
 ```
 pip install -r requirements.txt
 ```
 
-### 3. Modify Script for server and portin line 6,7 
+3. Modify Script for server and portin line 6,7 
 ```
 broker_address = "16.170.238.248"
 broker_port = 1886
@@ -166,7 +195,7 @@ broker_port = 1886
 
 > Note: If you are using our pre configured mqtt server you don't need to change the broker_address in line 6 and broker_port in line 7.
 
-### 4. Run Application
+4. Run Application
 ```
 python main.py
 ```
