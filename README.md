@@ -10,6 +10,9 @@ The system will consist of three main components:
 - A BLE server that receives data from the web application and broadcasts it to other BLE devices.
 - BLE devices that can receive data from the BLE server and act upon it.
 
+![image](https://github.com/p4l4s6/IOT-MINI-PROJECT-2/assets/50152321/bd32baca-77d4-480f-9bf3-4b5ca1beb73c)
+
+
 The web application will use the MQTT protocol to connect to the BLE server. It will then send data to the BLE server with a specific service ID and characteristic. The BLE server will listen for messages on this topic and broadcast the data to other BLE devices that are interested in it.
 
 The BLE devices will use Bluetooth Low Energy to scan for nearby BLE servers. When they find one, they will connect to it and subscribe to the topic that the web application is sending data to. Once they receive data from the BLE server, they can act upon it accordingly.
@@ -130,6 +133,16 @@ If you are using our pre configured mqtt server you don't need to change the `mq
 4. Click the `Upload` button. The firmware will be uploaded to the XIAO_ESP32C3 board.
 5. Once the firmware is uploaded to the board reboot the board and open up `Serial Monitor` from `TOOLS > Serial Monitor` and keep it open. The transmitted message will be shown here.
 
+# Prepare Mobile Device as the Receiver
+
+Firts, search and download the nRF Connect app in major mobile app stores, which allows your phone to search for and connect to Bluetooth devices.
+
+- Android: [nRF Connect](https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp&hl=en)
+- IOS: [nRF Connect](https://apps.apple.com/us/app/nrf-connect-for-mobile/id1054362403)
+
+After downloading the software, follow the steps shown below to search for and connect XIAO ESP32S3, and you will see the advertised "Hello World".
+
+![image](https://github.com/p4l4s6/IOT-MINI-PROJECT-2/assets/50152321/b90c6471-cca3-4df4-921b-820b81f7a488)
 
 
 # Prepare Web Application
