@@ -102,9 +102,9 @@ You can setup your own cloud MQTT server or you can use pre configured server wi
 
 1. Login to your cloud VM instance via ssh
 ```
-ssh <username>@<server>
+ssh [username]@[server]
 ```
-> Replace <username> with your server's username and <server> with your server's IP address
+> Replace [username] with your server's username and [server] with your server's IP address
 
 2. Run the below commands to install mosquitto
 ```
