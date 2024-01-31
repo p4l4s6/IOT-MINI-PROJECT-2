@@ -141,7 +141,8 @@ sudo nano /etc/mosquitto/conf.d/default.conf
 
 4. Open the Boards Manager. Go to `Tools > Board > Boards Manager`.
 5. Search for `ESP32` and press install button for the `ESP32 by Espressif Systems`
-6. That’s it. It should be installed after a few seconds.
+6. It should be installed after a few seconds.
+7. Go to `sketch > include library > manage libraries` and search for `PubSubClient` and click on install.
 
 
 
@@ -229,8 +230,8 @@ python main.py
 After the application has been run it should tranmit 100 message to BLE server
 
 
-# Observe
-
+# Video Link
+Click [here](https://unioulu-my.sharepoint.com/:v:/g/personal/rislam23_student_oulu_fi/EXTfDUCEU-tJqCUxMWwMg3wBb-21hXVVjST6YcqHimexxA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=srmSe8) to see a demo.
 
 
 
