@@ -98,10 +98,13 @@ git clone https://github.com/p4l4s6/IOT-MINI-PROJECT-2
 # Instructions
 
 ## Setup MQTT server
-You can setup your own cloud MQTT server or you can use pre configured server with IP and Port
+You can setup your own cloud MQTT server or you can use pre configured server with IP `16.170.238.248` and Port `1886`
 
 1. Login to your cloud VM instance via ssh
-
+```
+ssh <username>@<server>
+```
+> Replace <username> with your server's username and <server> with your server's IP address
 
 2. Run the below commands to install mosquitto
 ```
